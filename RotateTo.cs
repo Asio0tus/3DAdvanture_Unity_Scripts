@@ -9,7 +9,7 @@ public class RotateTo : MonoBehaviour
 
     private void Update()
     {
-        transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(target), speed * Time.deltaTime);       
+        transform.localRotation = Quaternion.RotateTowards(transform.localRotation, Quaternion.Euler(target), speed * Time.deltaTime);       
      
     }
 }

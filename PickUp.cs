@@ -5,7 +5,7 @@ using SimpleFPS;
 
 public class PickUp : MonoBehaviour
 {
-    private void OnTriggerEnter(Collider other)
+    protected virtual void OnTriggerEnter(Collider other)
     {
         FirstPersonController fps = other.GetComponent<FirstPersonController>();
 
