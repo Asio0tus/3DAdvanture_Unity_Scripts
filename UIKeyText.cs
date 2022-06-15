@@ -10,15 +10,15 @@ public class UIKeyText : MonoBehaviour
 
     private void Start()
     {
-        bag.ChangeAmountKey.AddListener(OnChangeHitPoints);
+        bag.ChangeAmountKey.AddListener(OnShowKeyText);
     }
 
     private void OnDestroy()
     {
-        bag.ChangeAmountKey.RemoveListener(OnChangeHitPoints);
+        bag.ChangeAmountKey.RemoveListener(OnShowKeyText);
     }
 
-    private void OnChangeHitPoints()
+    private void OnShowKeyText()
     {
         text.text = bag.GetAmountKey().ToString();
     }
